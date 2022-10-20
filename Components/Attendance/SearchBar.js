@@ -1,17 +1,16 @@
-import * as React from 'react';
-import { Searchbar } from 'react-native-paper';
+import * as React from "react";
+import { Searchbar } from "react-native-paper";
 
 export const SearchBar = () => {
-  const [searchQuery, setSearchQuery] = React.useState('');
+  const [searchQuery, setSearchQuery] = React.useState("");
 
-  const onChangeSearch = query => setSearchQuery(query);
+  const onChangeSearch = (query) => setSearchQuery(query);
 
   return (
     <Searchbar
-      placeholder="Search"
+      placeholder="Search Student"
       onChangeText={onChangeSearch}
       value={searchQuery}
     />
   );
 };
-
