@@ -19,7 +19,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import CustomButton from '../Components/CustomButton';
 
-const SignUpScreen = ({navigation}) => {
+export const SignUpScreen = ({navigation}) => {
 
 
   return (
@@ -106,7 +106,7 @@ const SignUpScreen = ({navigation}) => {
             marginBottom: 30,
           }}>
           <Text>Already registered?</Text>
-          <TouchableOpacity onPress={() => navigation.goBack('LoginScreen')}>
+          <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
             <Text style={{color: '#AD40AF', fontWeight: '700'}}> Login</Text>
           </TouchableOpacity>
         </View>
@@ -115,4 +115,4 @@ const SignUpScreen = ({navigation}) => {
   );
 };
 
-export default SignUpScreen;
+ 
